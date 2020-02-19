@@ -56,13 +56,13 @@ fetch('./config.json')
 document.body.addEventListener('mousedown', () =>
 {
 
-	document.getElementsByTagName('html')[0].style.cursor = 'url(assets/images/clippers-closed.png), auto';
+	document.getElementsByTagName('html')[0].style.cursor = 'url(assets/images/clippers-closed.png),0 64, auto';
 
 }, false);
 
 document.body.addEventListener('mouseup', () => {
 
-	document.getElementsByTagName('html')[0].style.cursor = 'url(assets/images/clippers.png), auto';
+	document.getElementsByTagName('html')[0].style.cursor = 'url(assets/images/clippers.png),0 64, auto';
 
 }, false);
 
