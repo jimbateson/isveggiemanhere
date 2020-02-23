@@ -53,6 +53,8 @@ fetch('./config.json')
 	console.log(err);
 });
 
+// Change clippers image on click
+
 document.body.addEventListener('mousedown', () =>
 {
 
@@ -65,6 +67,8 @@ document.body.addEventListener('mouseup', () => {
 	document.getElementsByTagName('html')[0].style.cursor = 'url(assets/images/clippers.png), auto';
 
 }, false);
+
+// Image preloading, so get the clippers bang on first click
 
 function preloadImages(array) {
 	if (!preloadImages.list) {

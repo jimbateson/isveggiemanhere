@@ -7,13 +7,8 @@ const objIs = document.querySelector('.is-he-here');
 const objIsSpec = document.querySelector('.is-he-here-special');
 
 fetch('config.json')
-	.then(obj => {
-
-		return obj.json();
-
-	})
+	.then(obj => { return obj.json();})
 	.then(objConfig => {
-
 		objIs.innerText = objConfig.isHeHere;
 		objIsSpec.innerText = objConfig.isHeHereSpecial;
 
@@ -24,6 +19,4 @@ fetch('config.json')
 		objIsBtn.addEventListener('click', () => {
 			objConfig.isHeHere = !objConfig.isHeHere;
 		}, false);
-
-
 	});
